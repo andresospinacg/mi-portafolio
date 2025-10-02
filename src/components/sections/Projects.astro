@@ -9,7 +9,9 @@ import { projects } from "@cv"
   <ul>
     {
       projects.map(
-        ({ url, description, highlights, name, isActive, github }) => {
+        (project) => {
+          const { url, description, highlights, name, isActive } = project
+          const github = (project as any).github
           return (
             <li>
               <article>
