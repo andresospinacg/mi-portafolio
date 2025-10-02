@@ -45,9 +45,9 @@ import { work } from "@cv"
                   <p>{summary}</p>
                   {highlights && highlights.length > 0 && (
                     <div class="highlights-container">
-                      <span class="highlights-badge">
+                      <button class="highlights-badge" type="button">
                         🏆 {highlights.length} Logros destacados
-                      </span>
+                      </button>
                       <div class="highlights-tooltip">
                         <ul class="highlights-list">
                           {highlights.map((highlight) => (
@@ -66,6 +66,31 @@ import { work } from "@cv"
     }
   </ul>
 </Section>
+
+<script>
+  // Hacer que el tooltip funcione con click en móviles
+  document.addEventListener('DOMContentLoaded', () => {
+    const badges = document.querySelectorAll('.highlights-badge');
+    
+    badges.forEach(badge => {
+      badge.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const container = badge.closest('.highlights-container');
+        container?.classList.toggle('active');
+      });
+    });
+
+    // Cerrar tooltip al hacer click fuera
+    document.addEventListener('click', (e) => {
+      if (!(e.target as HTMLElement).closest('.highlights-container')) {
+        document.querySelectorAll('.highlights-container.active').forEach(container => {
+          container.classList.remove('active');
+        });
+      }
+    });
+  });
+</script>
 
 <style>
   ul {
@@ -146,29 +171,34 @@ import { work } from "@cv"
     display: inline-flex;
     align-items: center;
     gap: 4px;
-    background: linear-gradient(135deg, #e8e9ee 0%, #eeebf0 100%);
-    color: rgb(0, 0, 0);
+    background: #f5f5f5;
+    color: #555;
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(102, 126, 234, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: none;
+    font-family: inherit;
   }
 
   .highlights-badge:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+    background: #ebebeb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  }
+
+  .highlights-badge:active {
+    transform: translateY(0);
   }
 
   .highlights-tooltip {
     visibility: hidden;
     opacity: 0;
     position: absolute;
-    bottom: 100%;
+    bottom: calc(100% + 8px);
     left: 0;
-    margin-bottom: 8px;
     background: white;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
@@ -179,12 +209,23 @@ import { work } from "@cv"
     max-width: 500px;
     transition: all 0.3s ease;
     transform: translateY(10px);
+    pointer-events: none;
   }
 
+  /* Mostrar tooltip en hover (desktop) */
   .highlights-container:hover .highlights-tooltip {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  /* Mostrar tooltip en click/tap (móvil) */
+  .highlights-container.active .highlights-tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 
   .highlights-list {
@@ -238,20 +279,34 @@ import { work } from "@cv"
       text-align: right;
     }
 
+    /* En móviles, el tooltip se centra y aparece arriba */
     .highlights-tooltip {
-      max-width: 90vw;
       left: 50%;
+      right: auto;
+      max-width: calc(100vw - 32px);
+      width: max-content;
       transform: translateX(-50%) translateY(10px);
     }
 
-    .highlights-container:hover .highlights-tooltip {
+    .highlights-container:hover .highlights-tooltip,
+    .highlights-container.active .highlights-tooltip {
       transform: translateX(-50%) translateY(0);
     }
 
+    /* Flecha centrada en móviles */
     .highlights-tooltip::after,
     .highlights-tooltip::before {
       left: 50%;
       transform: translateX(-50%);
+    }
+
+    /* Ajustar padding del tooltip en móviles */
+    .highlights-tooltip {
+      padding: 12px;
+    }
+
+    .highlights-list li {
+      font-size: 0.8rem;
     }
   }
 </style>
