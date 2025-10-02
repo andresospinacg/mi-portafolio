@@ -43,6 +43,20 @@ import { work } from "@cv"
 
                 <footer>
                   <p>{summary}</p>
+                  {highlights && highlights.length > 0 && (
+                    <div class="highlights-container">
+                      <span class="highlights-badge">
+                        🏆 {highlights.length} Logros destacados
+                      </span>
+                      <div class="highlights-tooltip">
+                        <ul class="highlights-list">
+                          {highlights.map((highlight) => (
+                            <li>{highlight}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  )}
                 </footer>
               </article>
             </li>
@@ -121,9 +135,123 @@ import { work } from "@cv"
     position: relative;
   }
 
+  /* Highlights Styles */
+  .highlights-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 12px;
+  }
+
+  .highlights-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: linear-gradient(135deg, #e8e9ee 0%, #eeebf0 100%);
+    color: rgb(0, 0, 0);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(102, 126, 234, 0.2);
+  }
+
+  .highlights-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+  }
+
+  .highlights-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    margin-bottom: 8px;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    width: max-content;
+    max-width: 500px;
+    transition: all 0.3s ease;
+    transform: translateY(10px);
+  }
+
+  .highlights-container:hover .highlights-tooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .highlights-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .highlights-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .highlights-list li::before {
+    content: "✓";
+    color: #667eea;
+    font-weight: bold;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  /* Arrow pointer for tooltip */
+  .highlights-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 24px;
+    border: 6px solid transparent;
+    border-top-color: white;
+  }
+
+  .highlights-tooltip::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 24px;
+    border: 7px solid transparent;
+    border-top-color: #e0e0e0;
+    margin-top: 1px;
+  }
+
   @media (width <= 700px) {
     time {
       text-align: right;
+    }
+
+    .highlights-tooltip {
+      max-width: 90vw;
+      left: 50%;
+      transform: translateX(-50%) translateY(10px);
+    }
+
+    .highlights-container:hover .highlights-tooltip {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .highlights-tooltip::after,
+    .highlights-tooltip::before {
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 </style>

@@ -1,161 +1,244 @@
 {
   "basics": {
-    "name": "Miguel Ángel Durán",
-    "label": "Full Stack Developer con más de 15 años de experiencia & Creador de Contenido de Programación",
+    "name": "Fabián Andrés Ospina Clavijo",
+    "label": "Profesional en Tecnologías de la Información | Especialista en ITSM, Automatización y Desarrollo",
     "image": "/me.webp",
-    "email": "miduga@gmail.com",
-    "phone": "+34 688888888",
-    "url": "https://midu.dev",
-    "summary": "+15 años de experiencia como Desarrollador Web. Actualmente soy Creador de Contenido y Divulgador sobre Programación. Vivo en Barcelona, España. He trabajado en diferentes entornos: desde acelerar el desarrollo de start-ups hasta liderando equipos de empresas multinacionales.",
+    "email": "ospinaclavijo.fabian@gmail.com",
+    "phone": "+57 321 9190143",
+    "url": "https://github.com/faaospina",
+    "summary": "Soy profesional en Tecnologías de la Información con sólida formación académica y experiencia comprobada en liderazgo de servicios TI. Especializado en automatización de procesos, desarrollo de asistentes virtuales multicanal, gestión de requerimientos bajo estándares ITIL v4 e ISO 9001, y soporte técnico integral. Experto en integración de sistemas, APIs de mensajería y gestión de bases de conocimiento. Con enfoque en mejora continua, cumplimiento de KPIs y orientación al cliente, aporto soluciones innovadoras que optimizan la eficiencia operacional y garantizan la satisfacción del usuario final.",
     "location": {
       "address": "",
       "postalCode": "08820",
-      "city": "el Prat de Llobregat",
-      "countryCode": "ES",
-      "region": "España"
+      "city": "Bogotá D.C.",
+      "countryCode": "CO",
+      "region": "Colombia"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "midudev",
-        "url": "https://linkedin.com/in/midudev"
+        "username": "ospina-clavijo",
+        "url": "www.linkedin.com/in/ospina-clavijo"
       },
       {
         "network": "X",
-        "username": "midudev",
-        "url": "https://x.com/midudev"
-      },
-      {
-        "network": "GitHub",
-        "username": "midudev",
-        "url": "https://github.com/midudev"
+        "username": "faaospina",
+        "url": "https://x.com/faaospina"
       }
+    
     ]
   },
   "work": [
     {
-      "name": "midudev",
-      "position": "Divulgador sobre Programación Web",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2021-01-01",
-      "endDate": null,
-      "summary": "Streamer de programación más visto en Español en Twitch. +1 millón de seguidores entre todas mis redes sociales. Reconocido por Google, Microsoft y GitHub por mi impacto en la comunidad de desarrolladores.",
+      "name": "Grupo Keralty- Sonda de Colombia",
+      "position": "GESTOR DE REQUERIMIENTOS",
+      "url": "https://sonda.com",
+      "startDate": "2025-01-01",  
+      "endDate": "2025-07-01",
+      "summary": "Lideré la gestión transversal de requerimientos aplicando estándares ITIL v4 e ISO 9001 para optimizar la eficiencia operativa del grupo. Desarrollé e implementé estrategias de reducción de requerimientos mediante mejora continua de procesos y cumplimiento riguroso de KPIs establecidos. Diseñé y desplegué soluciones de automatización inteligente utilizando n8n, LangChain y APIs de mensajería para optimizar flujos de trabajo críticos. Implementé análisis predictivo mediante Python y SQL para generación de dashboards interactivos en Grafana. Creé y mantuve artículos de conocimiento especializados para enriquecer la base de conocimiento organizacional sobre procesos críticos.",
       "highlights": [
-        "Started the company"
+        "Implementé sistema de automatización que redujo en 70% el tiempo de procesamiento de datos entre correo electrónico y hojas de cálculo, usando Apps Script",
+        "Implementé gestión de calidad bajo norma ISO 9001, garantizando cumplimiento del 95% de KPIs establecidos",
+        "Desarrollé 25+ artículos de conocimiento que mejoraron en 60% la eficiencia de resolución de consultas recurrentes",
+        "Implementé análisis predictivo de volumen de requerimientos que permitió optimización proactiva de recursos del equipo",
+        "Diseñé herramientas de notificación en tiempo real utilizando la API de Google Chat y Gmail, mejorando los tiempos de respuesta del equipo de resolución"
       ]
     },
     {
-      "name": "Adevinta",
-      "position": "Lead Frontend Architect",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2016-06-01",
-      "endDate": "2022-09-01",
-      "summary": "Lideré una convergencia técnica entre diferentes productos y migramos una arquitectura monolítica a otra más flexible y optimizada. Fomenté buenas prácticas y mejoras en la cultura de rendimiento, además de la entrega rápida de valor a los usuarios.",
+      "name": "Sonda de Colombia S.A",
+      "position": "AGENTE SERVICE DESK 1B",
+      "url": "https://sonda.com",
+      "startDate": "2022-01-01",
+      "endDate": "2024-06-01",
+      "summary": "Gestioné procesos de retroalimentación en bandeja de correos para cumplimiento de entregas de servicios. Configuré accesos y permisos de usuarios mediante LDAP y Active Directory, garantizando seguridad y control de identidades corporativas. Administré perfiles de usuario en Azure AD para acceso a servicios en la nube. Identifiqué oportunidades de automatización en órdenes de servicio e incidentes comunes. Diagnostiqué y solucioné problemas en equipos de cómputo incluyendo fallas de sistema operativo, firewall, antivirus y aplicativos web. Instalé, configuré y mantuve conexiones VPN. Documenté casos y escalé incidentes complejos con evidencias técnicas.",
       "highlights": [
-        "Started the company"
+        "Mantuve 95% de cumplimiento en acuerdos de nivel de servicio durante 30 meses consecutivos",
+        "Identifiqué y documenté 15 procesos de automatización para órdenes de servicio recurrentes",
+        "Lideré iniciativas de retroalimentación que mejoraron la satisfacción del cliente interno"
       ]
     },
     {
-      "name": "Hubii",
-      "position": "Senior FrontEnd Developer",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
-      "summary": "Desarrollé una plataforma de noticias geolocalizadas y una API para consumir la información. Escalé los servicios para soportar la carga de más de cientos de miles de peticiones al día. Recorté los tiempos de entrega y despliegues a producción a la mitad. Colaboré con Mozilla y Telefónica para desarrollar la primera app para televisores con FirefoxOS.",
+      "name": "Yotta Soluciones Ingeniería SAS",
+      "position": "AGENTE SERVICE DESK 1B",
+      "url": "https://yottaing.com",
+      "startDate": "2021-11-11",
+      "endDate": "2022-07-01",
+      "summary": "Brindé soporte remoto especializado a aplicativos utilizados por profesionales de la salud. Configuré impresoras de red y conexiones VPN. Documenté casos atendidos en herramientas ITSM aplicando políticas de seguridad de la información. Resolví problemas en aplicativos web y de escritorio del sector sanitario.",
       "highlights": [
-        "Started the company"
+        "Garanticé continuidad operativa del 98% en aplicativos críticos del sector salud",
+        "Implementé documentación de retroalimentación que mejoraron la trazabilidad de casos"
+      ]
+    },
+    {
+      "name": "Comdata Group Digitex",
+      "position": "TÉCNICO DE SOPORTE N1",
+      "url": "https://konecta.com",
+      "startDate": "2019-06-01",
+      "endDate": "2020-01-01",
+      "summary": "Configuré dispositivos IP estáticas y dinámicas en infraestructura de red. Creé y ejecuté cronogramas de mantenimiento preventivo en plantas industriales como solución de averías recurrentes en equipos de cómputo. Brindé soporte presencial y remoto en configuraciones de hardware y software. Diseñé campañas de sensibilización en ciberseguridad y prevención de phishing.",
+      "highlights": [
+        "Desarrollé planes de mantenimiento que redujeron en 40% las fallas críticas de equipos de cómputo",
+        "Configuré exitosamente infraestructura de red para 3 campañas comerciales simultáneas con ayuda de mis compañeros de áreas"
       ]
     }
   ],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
-  "education": [{
-    "institution": "Universitat Oberta de Catalunya",
-    "url": "https://www.uoc.edu/portal/es/index.html",
-    "area": "Ingeniero de Software",
-    "studyType": "Bachelor",
-    "startDate": "2003-01-01",
-    "endDate": "2009-01-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
-  }],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "UCompensar - Modalidad Virtual",
+      "url": "https://www.ucompensar.edu.co",
+      "area": "Ingeniería de Software",
+      "studyType": "Bachelor (Sexto semestre)",
+      "startDate": "2023-12-01",
+      "endDate": null,
+      "score": "En curso",
+      "courses": []
+    },
+    {
+      "institution": "Centro de Industria y Construcción - SENA",
+      "url": "https://www.sena.edu.co",
+      "area": "Tecnólogo en Mantenimiento de Equipos de Cómputo, Diseño e Instalación de Cableado Estructurado",
+      "studyType": "Tecnólogo",
+      "startDate": "2018-01-01",
+      "endDate": "2020-01-01",
+      "score": "Completado",
+      "courses": []
+    },
+    {
+      "institution": "UCompensar",
+      "url": "https://www.ucompensar.edu.co",
+      "area": "Técnica Profesional en Programación de Aplicaciones de Software",
+      "studyType": "Técnico Profesional",
+      "startDate": "2023-01-01",
+      "endDate": "2024-12-31",
+      "score": "Completado",
+      "courses": []
+    },
+    {
+      "institution": "Centro de Industria y Construcción - SENA",
+      "url": "https://www.sena.edu.co",
+      "area": "Técnico en Sistemas",
+      "studyType": "Técnico",
+      "startDate": "2015-01-01",
+      "endDate": "2017-01-01",
+      "score": "Completado",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "ITIL 4 Foundation - Gestión de Servicios IT",
+      "date": "2025-01-01",
+      "issuer": "Axelos",
+      "url": ""
+    },
+    {
+      "name": "Conceptos básicos de redes",
+      "date": "2023-01-01",
+      "issuer": "Cisco Networking Academy",
+      "url": ""
+    },
+    {
+      "name": "Manejo de Herramientas Microsoft Office 2016: Excel",
+      "date": "2022-01-01",
+      "issuer": "SENA",
+      "url": ""
+    },
+    {
+      "name": "Comercio, Industria, Turismo y TICs",
+      "date": "2022-01-01",
+      "issuer": "SENA",
+      "url": ""
+    },
+    {
+      "name": "Diplomado Técnico en Sistemas Informáticos - Capacítate para el Empleo - Fundación Carlos Slim",
+      "date": "2022-01-01",
+      "issuer": "Fundación Carlos Slim",
+      "url": ""
+    },
+    {
+      "name": "Inglés Pre intermedio - Nivel 2",
+      "date": "2019-01-01",
+      "issuer": "SENA",
+      "url": ""
+    },
+    {
+      "name": "CCNA Exploration - Acceso a la Red WAN",
+      "date": "2019-01-01",
+      "issuer": "SENA",
+      "url": ""
+    },
+    {
+      "name": "Fundamentos de Informática",
+      "date": "2019-01-01",
+      "issuer": "SENA",
+      "url": ""
+    },
+    {
+      "name": "Técnico en Instalación y Reparación de Equipo de Cómputo",
+      "date": "2019-01-01",
+      "issuer": "SENA",
+      "url": ""
+    },
+    {
+      "name": "Técnico en Redes de Datos",
+      "date": "2019-01-01",
+      "issuer": "SENA",
+      "url": ""
+    },
+    {
+      "name": "Instalador de Fibra Óptica",
+      "date": "2018-01-01",
+      "issuer": "SENA",
+      "url": ""
+    },
+    {
+      "name": "AutoCAD 2D",
+      "date": "2018-01-01",
+      "issuer": "SENA",
+      "url": ""
+    },
+    {
+      "name": "Tecnologías de la Información y la Comunicación TICs (Internet)",
+      "date": "2018-01-01",
+      "issuer": "SENA",
+      "url": ""
+    },
+    {
+      "name": "Procesos de Soporte Técnico para el Mantenimiento de Equipos de Cómputo",
+      "date": "2018-01-01",
+      "issuer": "Centro de Servicios Empresariales y Turísticos - SENA",
+      "url": ""
+    },
+    {
+      "name": "Arquitectura de Computadores",
+      "date": "2018-01-01",
+      "issuer": "Centro de Comercio y Turismo - SENA",
+      "url": ""
+    }
+  ],
+  "publications": [],
   "skills": [
     {
       "name": "HTML",
-      "level": "Master",
+      "level": "Avanzado",
       "keywords": [
         "Desarrollo Web", "Frontend"
       ]
     },
     {
       "name": "CSS",
-      "level": "Master",
+      "level": "Avanzado",
       "keywords": [
         "Desarrollo Web", "Frontend", "Diseño Responsive"
       ]
     },
     {
       "name": "JavaScript",
-      "level": "Master",
+      "level": "Avanzado",
       "keywords": [
         "Desarrollo Web", "Frontend", "Backend", "Fullstack"
-      ]
-    },
-    {
-      "name": "Tailwind",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
-      ]
-    },
-    {
-      "name": "TypeScript",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
-      ]
-    },
-    {
-      "name": "Node",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
-      ]
-    },
-    {
-      "name": "MySQL",
-      "level": "Avanzado",
-      "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
       ]
     },
     {
@@ -166,24 +249,122 @@
       ]
     },
     {
-      "name": "GitHub",
+      "name": "MySQL",
       "level": "Avanzado",
       "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+        "Bases de Datos", "SQL", "Backend"
       ]
     },
     {
-      "name": "Next.js",
+      "name": "SQL Server",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
+        "Bases de Datos", "SQL", "Backend"
       ]
     },
     {
-      "name": "React",
+      "name": "Python",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo", "Backend", "Automatización", "Scripting"
+      ]
+    },
+    {
+      "name": "Apps Script",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+        "Automatización", "Google Workspace", "Scripting"
+      ]
+    },
+    {
+      "name": "Power Automate",
+      "level": "Avanzado",
+      "keywords": [
+        "Automatización", "Microsoft", "Workflows"
+      ]
+    },
+    {
+      "name": "ITIL v4",
+      "level": "Avanzado",
+      "keywords": [
+        "Gestión de Servicios", "ITSM", "Mejores Prácticas"
+      ]
+    },
+    {
+      "name": "Postman",
+      "level": "Avanzado",
+      "keywords": [
+        "APIs", "Testing", "Desarrollo"
+      ]
+    },
+    {
+      "name": "Grafana",
+      "level": "Avanzado",
+      "keywords": [
+        "Dashboards", "Visualización", "Monitoreo"
+      ]
+    },
+    {
+      "name": "Chatwoot",
+      "level": "Intermedio",
+      "keywords": [
+        "Atención al Cliente", "Chat", "Soporte"
+      ]
+    },
+    {
+      "name": "Clientify",
+      "level": "Intermedio",
+      "keywords": [
+        "CRM", "Gestión de Clientes"
+      ]
+    },
+    {
+      "name": "GLPI",
+      "level": "Avanzado",
+      "keywords": [
+        "ITSM", "Service Desk", "Gestión de Tickets"
+      ]
+    },
+    {
+      "name": "Meta Business API",
+      "level": "Intermedio",
+      "keywords": [
+        "APIs", "Integración", "WhatsApp", "Instagram", "Facebook"
+      ]
+    },
+    {
+      "name": "n8n",
+      "level": "Intermedio",
+      "keywords": [
+        "Automatización", "Workflows", "Integraciones"
+      ]
+    },
+    {
+      "name": "LDAP",
+      "level": "Intermedio",
+      "keywords": [
+        "Gestión de Identidades", "Seguridad", "Redes"
+      ]
+    },
+    {
+      "name": "Active Directory",
+      "level": "Intermedio",
+      "keywords": [
+        "Gestión de Identidades", "Seguridad", "Redes"
+      ]
+    },
+    {
+      "name": "Azure AD",
+      "level": "Intermedio",
+      "keywords": [
+        "Gestión de Identidades", "Seguridad", "Cloud"
+      ]
+    },    
+    {
+      "name": "Excel",
+      "level": "Avanzado",
+      "keywords": [
+        "Gestión de Datos", "Análisis", "Automatización"
       ]
     }
   ],
@@ -197,79 +378,69 @@
       "fluency": "Advanced"
     }
   ],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
-  }],
+  "interests": [
+    {
+      "name": "Tecnología",
+      "keywords": [
+        "Automatización",
+        "ITSM",
+        "DevOps"
+      ]
+    },
+    {
+      "name": "Desarrollo de Software",
+      "keywords": [
+        "Web Development",
+        "APIs",
+        "Cloud Computing"
+      ]
+    }
+  ],
+  "references": [],
   "projects": [
     {
-      "name": "mars.codes",
-      "isActive": true,
-      "description": "Historia interactiva con retos de programación para viajar a Marte",
+      "name": "Sistema de Automatización de Requerimientos",
+      "isActive": false,
+      "description": "Desarrollo e implementación de asistentes virtuales multicanal, reutilización con Mapa de Trabajo automático, integración de bases de datos MySQL, SupaBase, PostgreSQL",
       "highlights": [
-        "Elige tu propia aventura",
-        "En desarrollo"
+        "Reducción del 70% en tiempo de procesamiento",
+        "Integración con Apps Script",
+        "Automatización Email-Excel"
       ],
-      "url": "https://mars.codes"
+      "url": ""
     },
     {
-      "name": "AdventJS",
-      "isActive": true,
-      "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
+      "name": "Dashboard Interactivo Grafana",
+      "isActive": false,
+      "description": "Creación y mantenimiento de dashboards interactivos para visualización de KPIs y métricas operacionales",
       "highlights": [
-        "+1 millón de visitas",
-        "Multidioma",
-        "JavaScript & TypeScript"
+        "Implementación de mejora continua",
+        "Optimización de flujos de trabajo críticos",
+        "Generación de reportes automatizados"
       ],
-      "url": "https://adventjs.dev"
+      "url": ""
     },
     {
-      "name": "Codember",
-      "isActive": true,
-      "description": "Juego interactivo de programación con retos y secretos",
+      "name": "Gestión de Servicios TI (ITSM)",
+      "isActive": false,
+      "description": "Implementación de módulos de atención avanzada de Requerimientos, Incidentes y gestión de conocimiento",
       "highlights": [
-        "+2000 usuarios activos",
-        "Retos para cualquier lenguaje"
+        "Creación y mantenimiento de base de conocimiento",
+        "Administración con GLPI y BMC Helix",
+        "Documentación de procesos críticos"
       ],
-      "url": "https://codember.dev"
+      "url": ""
     },
     {
-      "name": "codi.link",
+      "name": "Integraciones y APIs",
       "isActive": true,
-      "description": "Playground de código HTML, CSS y JavaScript para compartir",
+      "description": "Desarrollo de integraciones con CRM como Clientify, Chatwoot, Servicios con WebServices con APIs y Meta Business API",
       "highlights": [
-        "100k visitas al mes",
-        "Desarrollado por la comunidad"
+        "REST: Peticiones y WebServices",
+        "Integración con Postman",
+        "Conocimiento básico de infraestructura de redes"
       ],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
-    },
-    {
-      "name": "Pruebas Técnicas",
-      "isActive": true,
-      "description": "Lista de pruebas técnicas de empresas para practicar programación",
-      "highlights": [
-        "100% gratuito",
-        "+500 soluciones de la comunidad"
-      ],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
-    },
-    {
-      "name": "miduConf",
-      "description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
-      "highlights": [
-        "+15k tickets repartidos",
-        "+50k espectadores en directo"
-      ],
-      "url": "https://miduconf.com"
+      "url": "https://crm.estandartecnologia.com/app/login"
     }
   ]
 }
