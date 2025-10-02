@@ -67,24 +67,54 @@ import { work } from "@cv"
   </ul>
 </Section>
 
-<script>
-  // Hacer que el tooltip funcione con click en móviles
-  document.addEventListener('DOMContentLoaded', () => {
-    const badges = document.querySelectorAll('.highlights-badge');
+<script is:inline>
+  // Hacer que el tooltip funcione con click en móviles y desktop
+  document.addEventListener('DOMContentLoaded', function() {
+    var badges = document.querySelectorAll('.highlights-badge');
     
-    badges.forEach(badge => {
-      badge.addEventListener('click', (e) => {
+    badges.forEach(function(badge) {
+      badge.addEventListener('click', function(e) {
         e.preventDefault();
         e.stopPropagation();
-        const container = badge.closest('.highlights-container');
-        container?.classList.toggle('active');
+        var container = badge.closest('.highlights-container');
+        if (!container) return;
+        
+        var tooltip = container.querySelector('.highlights-tooltip');
+        
+        // Cerrar otros tooltips abiertos
+        var allContainers = document.querySelectorAll('.highlights-container.active');
+        allContainers.forEach(function(c) {
+          if (c !== container) c.classList.remove('active');
+        });
+        
+        // Toggle del tooltip actual
+        var isActive = container.classList.toggle('active');
+        
+        // En móviles, posicionar el tooltip de forma visible
+        if (tooltip && window.innerWidth <= 700 && isActive) {
+          var rect = badge.getBoundingClientRect();
+          var spaceAbove = rect.top;
+          var spaceBelow = window.innerHeight - rect.bottom;
+          
+          // Si hay más espacio arriba, mostrar arriba
+          if (spaceAbove > spaceBelow && spaceAbove > 200) {
+            tooltip.style.bottom = 'calc(100% + 8px)';
+            tooltip.style.top = 'auto';
+          } else {
+            // Sino, mostrar abajo
+            tooltip.style.top = 'calc(100% + 8px)';
+            tooltip.style.bottom = 'auto';
+          }
+        }
       });
     });
 
     // Cerrar tooltip al hacer click fuera
-    document.addEventListener('click', (e) => {
-      if (!(e.target as HTMLElement).closest('.highlights-container')) {
-        document.querySelectorAll('.highlights-container.active').forEach(container => {
+    document.addEventListener('click', function(e) {
+      var target = e.target;
+      if (target && target.closest && !target.closest('.highlights-container')) {
+        var activeContainers = document.querySelectorAll('.highlights-container.active');
+        activeContainers.forEach(function(container) {
           container.classList.remove('active');
         });
       }
@@ -279,34 +309,44 @@ import { work } from "@cv"
       text-align: right;
     }
 
-    /* En móviles, el tooltip se centra y aparece arriba */
+    /* En móviles, el tooltip se ajusta al ancho de pantalla */
     .highlights-tooltip {
-      left: 50%;
-      right: auto;
-      max-width: calc(100vw - 32px);
-      width: max-content;
-      transform: translateX(-50%) translateY(10px);
+      position: fixed;
+      left: 16px;
+      right: 16px;
+      bottom: auto;
+      top: auto;
+      max-width: none;
+      width: auto;
+      transform: none;
     }
 
-    .highlights-container:hover .highlights-tooltip,
     .highlights-container.active .highlights-tooltip {
-      transform: translateX(-50%) translateY(0);
+      transform: none;
     }
 
-    /* Flecha centrada en móviles */
+    /* Flecha oculta en móviles para evitar problemas de posicionamiento */
     .highlights-tooltip::after,
     .highlights-tooltip::before {
-      left: 50%;
-      transform: translateX(-50%);
+      display: none;
     }
 
     /* Ajustar padding del tooltip en móviles */
     .highlights-tooltip {
-      padding: 12px;
+      padding: 12px 16px;
+      max-height: 70vh;
+      overflow-y: auto;
     }
 
     .highlights-list li {
       font-size: 0.8rem;
+      line-height: 1.4;
+    }
+
+    /* Hacer el badge más grande y táctil en móviles */
+    .highlights-badge {
+      padding: 8px 14px;
+      font-size: 0.85rem;
     }
   }
 </style>
