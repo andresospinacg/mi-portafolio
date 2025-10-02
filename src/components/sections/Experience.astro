@@ -79,8 +79,6 @@ import { work } from "@cv"
         var container = badge.closest('.highlights-container');
         if (!container) return;
         
-        var tooltip = container.querySelector('.highlights-tooltip');
-        
         // Cerrar otros tooltips abiertos
         var allContainers = document.querySelectorAll('.highlights-container.active');
         allContainers.forEach(function(c) {
@@ -88,24 +86,7 @@ import { work } from "@cv"
         });
         
         // Toggle del tooltip actual
-        var isActive = container.classList.toggle('active');
-        
-        // En móviles, posicionar el tooltip de forma visible
-        if (tooltip && window.innerWidth <= 700 && isActive) {
-          var rect = badge.getBoundingClientRect();
-          var spaceAbove = rect.top;
-          var spaceBelow = window.innerHeight - rect.bottom;
-          
-          // Si hay más espacio arriba, mostrar arriba
-          if (spaceAbove > spaceBelow && spaceAbove > 200) {
-            tooltip.style.bottom = 'calc(100% + 8px)';
-            tooltip.style.top = 'auto';
-          } else {
-            // Sino, mostrar abajo
-            tooltip.style.top = 'calc(100% + 8px)';
-            tooltip.style.bottom = 'auto';
-          }
-        }
+        container.classList.toggle('active');
       });
     });
 
@@ -309,20 +290,23 @@ import { work } from "@cv"
       text-align: right;
     }
 
-    /* En móviles, el tooltip se ajusta al ancho de pantalla */
+    /* En móviles, el tooltip se centra verticalmente en la pantalla */
     .highlights-tooltip {
       position: fixed;
       left: 16px;
       right: 16px;
+      top: 50%;
       bottom: auto;
-      top: auto;
+      transform: translateY(-50%);
       max-width: none;
       width: auto;
-      transform: none;
     }
 
+    /* Cuando está activo, mantener el centrado vertical */
     .highlights-container.active .highlights-tooltip {
-      transform: none;
+      transform: translateY(-50%);
+      visibility: visible;
+      opacity: 1;
     }
 
     /* Flecha oculta en móviles para evitar problemas de posicionamiento */
@@ -347,6 +331,7 @@ import { work } from "@cv"
     .highlights-badge {
       padding: 8px 14px;
       font-size: 0.85rem;
+      -webkit-tap-highlight-color: transparent;
     }
   }
 </style>
