@@ -270,6 +270,13 @@
       ]
     },
     {
+      "name": "WordPress",
+      "level": "Intermedio",
+      "keywords": [
+        "Desarrollo Web", "Backend", "PHP"
+      ]
+    },
+    {
       "name": "Apps Script",
       "level": "Avanzado",
       "keywords": [
@@ -398,6 +405,19 @@
   ],
   "references": [],
   "projects": [
+    {
+      "name": "Fundación Xamoratí - Sitio Web Institucional",
+      "isActive": true,
+      "description": "Desarrollo completo del sitio web institucional para la Fundación por Amor a Tí, una organización sin ánimo de lucro que trabaja con población vulnerable del sur de Ibagué. El sitio presenta información de programas sociales, comedores comunitarios, programa educativo, y gestión de voluntarios.",
+      "highlights": [
+        "Desarrollo de sitio web completo con WordPress",
+        "Diseño responsive con HTML, CSS y JavaScript",
+        "Gestión de contenido multimedia (galería de imágenes)",
+        "Secciones informativas de programas sociales",
+        "Formularios de contacto y voluntariado"
+      ],
+      "url": "https://fundacionxamorati.org/"
+    },
     {
       "name": "Sistema de Automatización de Requerimientos",
       "isActive": false,
