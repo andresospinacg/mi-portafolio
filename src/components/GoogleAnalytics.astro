@@ -1,19 +1,9 @@
----
-// Componente para Google Analytics 4
-const GOOGLE_ANALYTICS_ID = import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID || "G-4VWPRFWWLV"
-const isProduction = import.meta.env.PROD
----
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4VWPRFWWLV"></script>
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-{isProduction && (
-  <>
-    <!-- Google tag (gtag.js) -->
-    <script async src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-4VWPRFWWLV');
-    </script>
-  </>
-)}
+  gtag('config', 'G-4VWPRFWWLV');
+</script>
