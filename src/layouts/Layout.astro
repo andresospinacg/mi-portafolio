@@ -1,5 +1,6 @@
 ---
 import { basics } from "@cv"
+import GoogleAnalytics from "@/components/GoogleAnalytics.astro"
 
 interface Props {
   title: string
@@ -32,6 +33,9 @@ const { image, summary, url } = basics
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={summary} />
     <meta name="twitter:image" content="" />
+
+    <!-- Google Analytics -->
+    <GoogleAnalytics />
   </head>
   <body>
     <slot />

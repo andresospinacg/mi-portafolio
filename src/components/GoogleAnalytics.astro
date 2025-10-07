@@ -1,0 +1,24 @@
+---
+// Componente para Google Analytics 4
+// Para obtener tu MEASUREMENT_ID:
+// 1. Ve a https://analytics.google.com/
+// 2. Crea una cuenta y propiedad si no tienes
+// 3. Copia el ID de medición (formato: G-XXXXXXXXXX)
+// 4. Reemplaza el valor en la variable GOOGLE_ANALYTICS_ID
+
+const GOOGLE_ANALYTICS_ID = import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID || "G-4VWPRFWWLV"
+const isProduction = import.meta.env.PROD
+---
+
+{isProduction && GOOGLE_ANALYTICS_ID !== "G-4VWPRFWWLV" && (
+  <>
+    <!-- Google tag (gtag.js) -->
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}></script>
+    <script define:vars={{ GOOGLE_ANALYTICS_ID }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', GOOGLE_ANALYTICS_ID);
+    </script>
+  </>
+)}
