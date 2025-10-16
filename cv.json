@@ -406,6 +406,19 @@
   "references": [],
   "projects": [
     {
+      "name": "Arte Entre Puntadas - E-commerce y Sistema de Gestión",
+      "isActive": true,
+      "description": "Desarrollo de tienda en línea completa para productos artesanales de tejido, con sistema integrado de gestión administrativa. Plataforma e-commerce con catálogo de productos, carrito de compras, procesamiento de pagos y panel de administración para gestión de inventario y pedidos.",
+      "highlights": [
+        "E-commerce completo con WordPress y WooCommerce",
+        "Sistema de gestión administrativa personalizado",
+        "Integración de pasarela de pagos",
+        "Panel de administración de inventario y pedidos",
+        "Diseño responsive y optimizado para móviles"
+      ],
+      "url": "https://www.arteentrepuntadas.store/"
+    },
+    {
       "name": "Fundación Xamoratí - Sitio Web Institucional",
       "isActive": true,
       "description": "Desarrollo completo del sitio web institucional para la Fundación por Amor a Tí, una organización sin ánimo de lucro que trabaja con población vulnerable del sur de Ibagué. El sitio presenta información de programas sociales, comedores comunitarios, programa educativo, y gestión de voluntarios.",
