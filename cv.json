@@ -242,10 +242,59 @@
       ]
     },
     {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Type Safety", "Fullstack"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "UI Components", "SPA"
+      ]
+    },
+    {
+      "name": "Astro",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "SSG", "SSR", "Performance"
+      ]
+    },
+    {
+      "name": "Tailwind CSS",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Styling", "Utility-First"
+      ]
+    },
+    {
       "name": "Git",
       "level": "Avanzado",
       "keywords": [
         "Control de Versiones", "Colaboración", "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones", "Colaboración", "CI/CD", "DevOps"
+      ]
+    },
+    {
+      "name": "Supabase",
+      "level": "Avanzado",
+      "keywords": [
+        "Backend", "PostgreSQL", "Authentication", "Database", "BaaS"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos", "SQL", "Backend", "Relational Database"
       ]
     },
     {
@@ -284,13 +333,6 @@
       ]
     },
     {
-      "name": "Power Automate",
-      "level": "Avanzado",
-      "keywords": [
-        "Automatización", "Microsoft", "Workflows"
-      ]
-    },
-    {
       "name": "ITIL v4",
       "level": "Avanzado",
       "keywords": [
@@ -309,6 +351,20 @@
       "level": "Avanzado",
       "keywords": [
         "Dashboards", "Visualización", "Monitoreo"
+      ]
+    },
+    {
+      "name": "Java",
+      "level": "Intermedio",
+      "keywords": [
+        "POO", "Backend", "Spring", "Desarrollo"
+      ]
+    },
+    {
+      "name": "Vercel",
+      "level": "Avanzado",
+      "keywords": [
+        "Deployment", "Hosting", "CI/CD", "Serverless"
       ]
     },
     {
@@ -406,15 +462,20 @@
   "references": [],
   "projects": [
     {
-      "name": "Arte Entre Puntadas - E-commerce y Sistema de Gestión",
+      "name": "Arte Entre Puntadas - Sistema de Gestión Empresarial",
       "isActive": true,
-      "description": "Desarrollo de tienda en línea completa para productos artesanales de tejido, con sistema integrado de gestión administrativa. Plataforma e-commerce con catálogo de productos, carrito de compras, procesamiento de pagos y panel de administración para gestión de inventario y pedidos.",
+      "description": "Plataforma web full-stack para gestión empresarial de negocio de amigurumis artesanales. Integra calculadora inteligente de precios, gestión de inventario en tiempo real, administración de proyectos y reportería avanzada con exportación a PDF. Incluye sitio público con catálogo de 38 productos, galería interactiva y sistema de favoritos. Reduce 80% el tiempo de cálculo de precios e incrementa 25% la rentabilidad al considerar todos los costos (materiales, mano de obra, gastos indirectos).",
       "highlights": [
-        "E-commerce completo con WordPress y WooCommerce",
-        "Sistema de gestión administrativa personalizado",
-        "Integración de pasarela de pagos",
-        "Panel de administración de inventario y pedidos",
-        "Diseño responsive y optimizado para móviles"
+        "Stack: Astro 5.14 + React 18.3 + TypeScript 5.6 + Tailwind CSS",
+        "Backend: Supabase (PostgreSQL + Auth con Google OAuth)",
+        "Calculadora de precios con integración a inventario en tiempo real",
+        "Reportería con 4 gráficas interactivas (Chart.js) y generación de PDFs profesionales (jsPDF)",
+        "Catálogo público con 38 productos, filtros por categoría y búsqueda en tiempo real",
+        "Sistema de favoritos con persistencia (localStorage) y compartir vía WhatsApp",
+        "Dashboard privado con CRUD completo de materiales y proyectos",
+        "Arquitectura Islands (Astro) para optimización de performance (90+ Lighthouse)",
+        "Deploy en Vercel con CI/CD automático",
+        "4,500+ líneas de código, 15+ componentes React, 12+ tipos TypeScript"
       ],
       "url": "https://www.arteentrepuntadas.store/"
     },
